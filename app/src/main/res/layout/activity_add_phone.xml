@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context=".AddPhoneActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="@string/phone_name"
+            style="@style/ListViewStyle" />
+
+        <EditText
+            android:id="@+id/edit_phone_name"
+            android:hint="@string/hint_phone_name"
+            android:inputType="textCapWords"
+            android:layout_marginStart="@dimen/margin_half"
+            android:layout_marginLeft="@dimen/margin_half"
+            style="@style/EditorFieldStyle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding_add_phone"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="@string/phone_quantity"
+            style="@style/ListViewStyle" />
+
+        <EditText
+            android:id="@+id/edit_phone_quantity"
+            android:hint="@string/hint_phone_quantity"
+            android:inputType="number"
+            android:layout_marginStart="@dimen/activity_margin_short"
+            android:layout_marginLeft="@dimen/activity_margin_short"
+            style="@style/EditorFieldStyle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding_add_phone"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ListViewStyle"
+            android:text="@string/phone_price" />
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/price_unit"
+                android:text="@string/unit_price"
+                android:layout_marginRight="@dimen/margin_quarter"
+                android:layout_marginEnd="@dimen/margin_quarter"
+                style="@style/EditorUnitsStyle"/>
+
+            <EditText
+                android:id="@+id/edit_phone_price"
+                android:hint="@string/hint_phone_price"
+                android:inputType="number"
+                android:layout_marginStart="@dimen/margin_quarter"
+                android:layout_marginLeft="@dimen/margin_quarter"
+                style="@style/EditorFieldStyle" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_supplier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding_add_phone"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ListViewStyle"
+            android:text="@string/supplier" />
+
+        <EditText
+            android:id="@+id/edit_phone_supplier"
+            android:layout_width="match_parent"
+            android:hint="@string/hint_phone_supplier_phone"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:layout_marginLeft="@dimen/activity_margin_right"
+            android:layout_marginStart="@dimen/activity_margin_right"
+            style="@style/EditorFieldStyle" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="@string/phone_image"
+            android:id="@+id/image_textView"
+            style="@style/ListViewStyle"
+            android:layout_height="@dimen/margin"
+            android:layout_width="match_parent"/>
+
+        <ImageButton android:layout_width="@dimen/image_button_layout"
+            android:id="@+id/upload_image_imageButton"
+            android:layout_height="@dimen/image_button_layout"
+            android:layout_below="@+id/image_textView"
+            android:scaleType="centerCrop"
+            android:text="@string/upload_image_textView"
+            android:src="@drawable/phone"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/click_to_upload_textView"
+            android:paddingTop="@dimen/activity_margin_short"
+            android:layout_below="@+id/upload_image_imageButton"
+            android:text="@string/upload_image_textView"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_click"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/activity_margin_short"
+            android:layout_height="@dimen/uploaded_image"
+            android:id="@+id/image_uploaded_imageView"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

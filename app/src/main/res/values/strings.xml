@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Mobile Phone Inventory</string>
+    <string name="empty_phone_list_text">No phones in the list yet!</string>
+    <string name="empty_phone_list_subtitle_text">Get started by adding a phone.</string>
+
+    <!--Main Screen-->
+    <string name="phone_name">Name</string>
+    <string name="phone_quantity">Quantity</string>
+    <string name="phone_price">Price</string>
+    <string name="phone_image">Image</string>
+
+    <string name="hint_phone_name">Enter phone name</string>
+    <string name="hint_phone_quantity">Enter phone quantity</string>
+    <string name="hint_phone_price">Enter phone price</string>
+    <string name="hint_phone_supplier">Name</string>
+    <string name="hint_phone_supplier_phone">Enter supplier phone #</string>
+
+    <string name="unit_phone_image">Image</string>
+    <string name="unit_price">$</string>
+    <string name="upload_image_textView">Click to upload an image</string>
+    <string name="current_quantity_textView">Current Quantity</string>
+
+    <string name="sale_button">Sale</string>
+
+    <!--Menu items-->
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_delete_all_entries">Delete All</string>
+    <string name="action_insert_dummy_data">Insert dummy data</string>
+
+    <!--Details screen-->
+    <string name="quantity_available">Quantity Available</string>
+    <string name="supplier">Supplier</string>
+    <string name="supplier_phone_number">Supplier Phone Number</string>
+    <string name="current_supplier">Supplier Name</string>
+    <string name="order_from_supplier">Order More</string>
+    <string name="increase_quantity">+</string>
+    <string name="decrease_quantity">-</string>
+    <string name="quantity">Quantity</string>
+    <string name="quantityDisplay">Quantity : </string>
+    <string name="action_delete_record">Delete this record</string>
+    <string name="error_deleting_phone">Error saving phone.</string>
+    <string name="phone_deleted_successfully">Phone deleted successfully.</string>
+    <string name="delete_dialog_msg">Delete this phone?</string>
+    <string name="delete_phone">Delete</string>
+    <string name="cancel">Cancel</string>
+
+    <!--Add Phone screen-->
+    <string name="error_saving_phone">Error saving phone.</string>
+    <string name="phone_saved_successfully">Phone saved successfully.</string>
+    <string name="error_editing_phone_details">Error editing phone details.</string>
+    <string name="phone_edited_successfully">Phone edited successfully.</string>
+    <string name="unsaved_changes_dialog_msg">Discard changes and quit?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep Editing</string>
+    <string name="order_from_supplier_message">Hello, I would like to order some more items.</string>
+    <string name="all_fields_required_error_toast">All fields are required. Please fill in all details.</string>
+
+</resources>

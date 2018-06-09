@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/details_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/phone_image_view_details" />
+
+    <TextView
+        android:id="@+id/quantity_available_textView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_margin_left"
+        android:textSize="@dimen/text_size"
+        android:layout_marginTop="@dimen/activity_margin_left"
+        android:text="@string/quantity_available" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_left">
+
+        <Button
+            android:id="@+id/increase_quantity_button"
+            android:layout_width="@dimen/margin"
+            android:layout_height="@dimen/margin"
+            android:background="@android:color/holo_purple"
+            android:text="@string/increase_quantity"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/show_quantity_textView"
+            android:layout_width="@dimen/margin"
+            android:layout_height="@dimen/margin"
+            android:textSize="@dimen/text_size"
+            android:paddingLeft="@dimen/activity_margin"
+            android:paddingRight="@dimen/activity_margin"
+            android:paddingTop="@dimen/activity_margin"
+            android:paddingBottom="@dimen/activity_margin_short"
+            android:layout_marginLeft="@dimen/activity_margin"
+            android:layout_toEndOf="@+id/increase_quantity_button"
+            android:layout_toRightOf="@+id/increase_quantity_button"
+            android:textColor="@android:color/holo_purple"
+            tools:text="@string/quantity" />
+
+        <Button
+            android:id="@+id/decrease_quantity_button"
+            android:layout_width="@dimen/margin"
+            android:layout_height="@dimen/margin"
+            android:layout_marginLeft="@dimen/activity_margin"
+            android:layout_toEndOf="@+id/show_quantity_textView"
+            android:layout_toRightOf="@+id/show_quantity_textView"
+            android:background="@android:color/holo_purple"
+            android:text="@string/decrease_quantity"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/supplier_textView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_margin_left"
+        android:textSize="@dimen/text_size"
+        android:layout_marginTop="@dimen/activity_margin_left"
+        android:text="@string/supplier_phone_number" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_left">
+
+        <TextView
+            android:id="@+id/show_supplier_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_margin_short"
+            android:textSize="@dimen/text_size_supplier"
+            android:textColor="@android:color/holo_purple"
+            tools:text="@string/supplier" />
+
+        <Button
+            android:id="@+id/order_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:paddingTop="@dimen/activity_margin_short"
+            android:paddingBottom="@dimen/activity_margin"
+            android:paddingLeft="@dimen/activity_margin"
+            android:paddingRight="@dimen/activity_margin"
+            android:layout_toEndOf="@+id/show_supplier_textView"
+            android:layout_toRightOf="@+id/show_supplier_textView"
+            android:background="@android:color/holo_purple"
+            android:text="@string/order_from_supplier"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_left"
+        android:paddingTop="@dimen/base_margin"
+        android:paddingBottom="@dimen/base_margin"
+        android:paddingLeft="@dimen/base_margin"
+        android:paddingRight="@dimen/base_margin"
+        android:background="@color/colorAccent"
+        android:text="@string/action_delete_record"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>

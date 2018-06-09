@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relativeLayout_listItem"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="@dimen/activity_margin">
+
+    <LinearLayout
+        android:layout_width="@dimen/phone_image_view_details"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/activity_margin_right"
+        android:id="@+id/list_item_linear_layout">
+
+        <TextView
+            android:id="@+id/name_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            tools:text="@string/phone_name"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorPrimary"  />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/price_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                tools:text="@string/phone_price"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorPrimaryDark"  />
+
+            <TextView
+                android:id="@+id/unit_quantity_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_margin_short"
+                android:paddingStart="@dimen/activity_margin_short"
+                android:paddingRight="@dimen/activity_margin_short"
+                android:layout_toRightOf="@+id/price_textView"
+                android:layout_toEndOf="@+id/price_textView"
+                android:fontFamily="sans-serif"
+                android:text="@string/unit_price"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorPrimaryDark"  />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout_quantityTextViews">
+
+            <TextView
+                android:id="@+id/label_quantity_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/quantityDisplay"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorAccent"  />
+
+            <TextView
+                android:id="@+id/current_quantity_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="@dimen/activity_margin_short"
+                android:layout_toRightOf="@+id/label_quantity_textView"
+                android:layout_toEndOf="@+id/label_quantity_textView"
+                tools:text="@string/current_quantity_textView"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorAccent"  />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sale_button"
+        android:layout_marginRight="@dimen/activity_margin_short"
+        android:layout_marginTop="@dimen/activity_margin_right"
+        android:layout_marginLeft="@dimen/activity_margin_right"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:focusable="false"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_purple"
+        android:textColor="@android:color/background_light"
+        android:layout_toEndOf="@+id/list_item_linear_layout"
+        android:layout_toRightOf="@+id/list_item_linear_layout"
+        android:text="@string/sale_button"/>
+
+</RelativeLayout>
