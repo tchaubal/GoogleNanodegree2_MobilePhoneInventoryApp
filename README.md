@@ -1,0 +1,3 @@
+# GoogleNanodegree2_MobilePhoneInventoryApp
+Designing and creating the structure of a Phone Inventory App which would allow a store to keep track of its inventory of products. The app will need to store information about price, quantity available, supplier, and a picture of the product. It will also need to allow the user to track sales and shipments and make it easy for the user to order more from the listed supplier.
+Learning goals for this project: storing information in a SQLite database, integrating Android’s file storage systems into that database, presenting information from files and SQLite databases to users, updating information based on user input, creating intents to other apps using stored information.
